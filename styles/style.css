@@ -67,13 +67,13 @@ nav ul a {
   background: #bdbdbd;
 }
 
-.p--open--about2 {
+.div--open--about2 {
   display: inline-block;
   font-family: "Cutive Mono", sans-serif;
   font-style: italic;
   font-weight: 600;
   outline: 1pt #0d0d0d dashed;
-  padding: 0.8rem 0.8rem;
+  padding: 0.5rem 0.8rem;
   margin: 0;
 }
 
@@ -95,13 +95,11 @@ nav ul a {
 }
 
 .h3--justifyAlign--center {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .project-box {
-  padding: 0.8rem 0.8rem;
-  margin: 0 0 1rem 2rem;
-  outline: 1pt #0d0d0d dashed;
+  margin: 0;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -109,6 +107,7 @@ nav ul a {
 
 .div--backgroundColor--longerText {
   background-color: #bdbdbd;
+  padding: 0.3rem;
 }
 
 .div--justify--spaceAround {
@@ -119,18 +118,19 @@ nav ul a {
 }
 
 .div--spacing--upMarginTop {
-  margin: 2rem 0.5rem 1rem 0.5rem;
+  margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .div--font--font1Italic {
   font-style: italic;
 }
 
-.a--format-removeStyle {
+.a--format--removeStyle {
+  display: block;
   padding: 10px;
   font-family: "Cutive Mono", sans-serif;
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  max-width: 115px;
   text-decoration: none;
   background-color: #0d0d0d;
   color: white;
@@ -161,14 +161,16 @@ ul.fa-ul li:hover {
 }
 
 .fa-cookie, .fa-cookie-bite {
-  font-size: 150%;
   color: #e0d184;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 .anchor {
   height: 2rem;
   width: 100%;
   padding: 1rem 0 0 0;
+  margin-top: 2rem;
   position: relative;
   display: inline-block;
 }
@@ -189,12 +191,12 @@ h1, h2, h3 {
   font-family: "Cutive Mono", sans-serif;
 }
 
-h3 {
-  font-style: italic;
+h1 {
+  height: 5.25rem;
 }
 
-.fas {
-  font-size: 0.8rem;
+h3 {
+  font-style: italic;
 }
 
 .hidden {
@@ -207,13 +209,13 @@ img {
   height: auto;
 }
 
-a:hover, nav.a--display--vertical:hover, div.div--transform--onHover:hover, a--transform--hover:hover, .li--transform--hover:hover .p--open--about2:hover {
+a:hover, .div--transform--onHover:hover, .li--transform--hover:hover, .div--open--about2:hover {
   color: #e0d184;
   transform: translate(2px, 2px);
   cursor: pointer;
 }
 
-a, nav.a--display--vertical, .p--open--about2 {
+a, nav.a--display--vertical, .open-text {
   color: #737373;
 }
 
@@ -232,6 +234,14 @@ a, nav.a--display--vertical, .p--open--about2 {
 
   .h3--justifyAlign--center {
     text-align: center;
+  }
+
+  .div--backgroundColor--longerText {
+    padding: 0px;
+  }
+
+  .a--format--removeStyle {
+    display: inline;
   }
 }
 @media screen and (min-width: 456px) {
@@ -267,6 +277,9 @@ a, nav.a--display--vertical, .p--open--about2 {
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
+  }
+  nav .project-box {
+    margin: 0 0 1rem 2rem;
   }
 
   .li--width--contain {

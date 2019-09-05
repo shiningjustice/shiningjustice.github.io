@@ -26,7 +26,7 @@ const portfolio = (function () {
       <p>I'm <em>Phoebe Law</em>,</br>
       <em>Junior Full-stack Javascript Developer</em>.</p>
       <p>I love making beautifully functional (and functionally beautiful) things.</p>
-      <p class="p p--open--about2 p--style--italic">More <i class="fas fa-chevron-down"></i></p>
+      <div class="div--open--about2"><span class="open-text">More</span> <i class="fas fa-chevron-down"></i></div>
     
       <!-- ABOUT ME 2/2 -->
       <section class="section section--display--about2 hidden">
@@ -65,9 +65,9 @@ const portfolio = (function () {
         <h2 class="target-label">Help Yourself to Some Connects</h2>
       </div>
       <ul class="fa-ul">
-        <li class="li--transform--hover"><a class="a--transform--hover" href="https://www.linkedin.com/in/phoebemlaw/"><span class="fa-li"><i class="fas fa-cookie"></i></span>LinkedIn</a></li>
-        <li class="li--transform--hover"><a class="a--transform--hover" href="https://github.com/shiningjustice/"><span class="fa-li"><i class="fas fa-cookie-bite"></i></span>Github</a></li>
-        <li class="li--transform--hover"><a class="a--transform--hover" href="mailto:phoebebasilio@gmail.com">Email (phoebebasilio@gmail.com)</a></li>
+        <li class="li--transform--hover"><a href="https://www.linkedin.com/in/phoebemlaw/"><span class="fa-li"><i class="fas fa-cookie"></i></span>LinkedIn</a></li>
+        <li class="li--transform--hover"><a href="https://github.com/shiningjustice/"><span class="fa-li"><i class="fas fa-cookie-bite"></i></span>Github</a></li>
+        <li class="li--transform--hover"><a href="mailto:phoebebasilio@gmail.com">Email (phoebebasilio@gmail.com)</a></li>
       </ul>
     </section>
   `);
@@ -113,8 +113,8 @@ const portfolio = (function () {
           <p>${description}<p>
           <div class="div div--justify--spaceAround div--font--font1Italic">${skillsFormatted}</div>
           <div class="div--justify--spaceAround div--spacing--upMarginTop">
-            <div class="div div--transform--onHover"><a class="a--format-removeStyle" href="${liveSiteUrl}">View Live Site</a></div>
-            <div class="div div--transform--onHover"><a class="a--format-removeStyle" href="${githubUrl}">View Github</a></div>
+            <div class="div div--transform--onHover"><a class="a--format--removeStyle" href="${liveSiteUrl}">View Live Site</a></div>
+            <div class="div div--transform--onHover"><a class="a--format--removeStyle" href="${githubUrl}">View Github</a></div>
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@ const portfolio = (function () {
   };
 
   const handleAbout2 = function () {
-    $('.section--display--add').on('click', '.p--open--about2', function () {
+    $('.section--display--add').on('click', '.div--open--about2', function () {
       console.log('handleAbout2 ran');
       toggleDisplayAbout2();
       if ($('.section--display--about2').hasClass('hidden')) {

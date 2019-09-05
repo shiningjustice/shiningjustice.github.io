@@ -107,13 +107,13 @@ nav {
     background: $longerText-background-color;
   }
 }
-.p--open--about2 {
+.div--open--about2 {
   display: inline-block;
   font-family: $font-stack-1;
   font-style: italic;
   font-weight: 600;
   outline: $box-outline;
-  padding: $box-large-padding;
+  padding: $box-small-padding;
   margin: 0;
 }
 .p--style--tDecoration {
@@ -134,13 +134,11 @@ nav {
 
 //WORK
 .h3--justifyAlign--center {
-  margin-bottom: 0; 
+  margin-bottom: .5rem; 
 }
 .project-box {
   //.div--style--box
-  padding: $box-large-padding;
-  margin: 0 0 1rem 2rem;
-  outline: $box-outline;
+  margin: 0;
   //.div--size--contain 
   position: relative; //also for overlay--text
   overflow: hidden;
@@ -149,6 +147,7 @@ nav {
 }
 .div--backgroundColor--longerText {
   background-color: $longerText-background-color;
+  padding: .3rem;
 }
 .div--justify--spaceAround {
   display: flex;
@@ -157,16 +156,17 @@ nav {
   font-family: $font-stack-1;
 }
 .div--spacing--upMarginTop {
-  margin: 2rem .5rem 1rem .5rem;
+  margin: 1rem .5rem 1rem .5rem;
 }
 .div--font--font1Italic {
   font-style: italic;
 }
-.a--format-removeStyle {
+.a--format--removeStyle {
+  display: block;
   padding: 10px;
   font-family: $font-stack-1;
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  max-width: 115px;
   text-decoration: none;
   background-color: $color-1;
   color: white;
@@ -196,8 +196,9 @@ ul.fa-ul {
   }
 }
 .fa-cookie, .fa-cookie-bite {
-  font-size: 150%;
   color: $yellow;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 //----BY ATTRIBUTE----
@@ -205,6 +206,7 @@ ul.fa-ul {
   height: 2rem;
   width: 100%;
   padding: 1rem 0 0 0;
+  margin-top: 2rem;
   position: relative;
   display: inline-block;
 }
@@ -233,10 +235,6 @@ h3 {
   font-style: italic;
 }
 
-.fas {
-  font-size: .8rem;
-}
-
 .hidden {
   display: none;
 }
@@ -247,13 +245,13 @@ img {
   height: auto;
 }
 
-a:hover, nav.a--display--vertical:hover, div.div--transform--onHover:hover, a--transform--hover:hover, .li--transform--hover:hover .p--open--about2:hover {
+a:hover, .div--transform--onHover:hover, .li--transform--hover:hover, .div--open--about2:hover {
   color: $yellow;
   transform: translate(2px, 2px);
   cursor: pointer;
 }
 
-a, nav.a--display--vertical, .p--open--about2 {
+a, nav.a--display--vertical, .open-text {
   color: $color-3;
 }
 
@@ -273,6 +271,15 @@ a, nav.a--display--vertical, .p--open--about2 {
   .h3--justifyAlign--center {
     text-align: center;
   }
+
+  .div--backgroundColor--longerText {
+    padding: 0px;
+  }
+
+  .a--format--removeStyle {
+    display: inline;
+  }
+
 }
 @media screen and (min-width: 456px) {  
   ul.fa-ul {
@@ -306,6 +313,9 @@ a, nav.a--display--vertical, .p--open--about2 {
         padding: 10px 16px;
         text-decoration: none;
       }
+    }
+    .project-box {
+      margin: 0 0 1rem 2rem;
     }
   }
   .li--width--contain {
