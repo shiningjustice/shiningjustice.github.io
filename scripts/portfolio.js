@@ -40,13 +40,7 @@ const portfolio = (function () {
         <p>The first time the parallel between what I did and what I could do clicked was when I was organizing my many incoming emails with rules. I was making it very specialized, where ordering rules mattered and one small selection had many big effects. The thought process was a lot like symbolic logic I learned in college, but practically applied (I always thought symbolic logic was mostly useful for people taking the LSAT/law careers). My degree in Linguistics gave me an idea of what programming would be like, and though then it was just a small idea, I thought: “Huh. I can actually do this. And it can be just as practical as what I am doing now.”</p>          
         <p>So I did.</p>
         </section>
-        
-      <h2>My skills include:</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-      </ul>
+      
     </section>
 
     <!-- MY PROJECTS -->
@@ -113,8 +107,8 @@ const portfolio = (function () {
           <p>${description}<p>
           <div class="div div--justify--spaceAround div--font--font1Italic">${skillsFormatted}</div>
           <div class="div--justify--spaceAround div--spacing--upMarginTop">
-            <div class="div div--transform--onHover"><a class="a--format--removeStyle" href="${liveSiteUrl}">View Live Site</a></div>
-            <div class="div div--transform--onHover"><a class="a--format--removeStyle" href="${githubUrl}">View Github</a></div>
+            <div class="div div--transform--onHover"><a class="a--format--removeStyle" href="${liveSiteUrl}" target="_blank">View Live Site</a></div>
+            <div class="div div--transform--onHover"><a class="a--format--removeStyle" href="${githubUrl}" target="_blank">View Github</a></div>
           </div>
         </div>
       </div>
