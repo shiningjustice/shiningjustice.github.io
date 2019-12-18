@@ -54,7 +54,7 @@ const portfolio = (function () {
       <ul class="fa-ul">
         <li class="li--transform--hover"><a href="https://www.linkedin.com/in/phoebemlaw/"><span class="fa-li"><i class="fas fa-cookie"></i></span>LinkedIn</a></li>
         <li class="li--transform--hover"><a href="https://github.com/shiningjustice/"><span class="fa-li"><i class="fas fa-cookie-bite"></i></span>Github</a></li>
-        <li class="li--transform--hover"><a href="mailto:phoebebasilio@gmail.com">Email (phoebebasilio@gmail.com)</a></li>
+        <li class="li--transform--hover"><a href="mailto:phoebecodes@gmail.com">Email (phoebecodes@gmail.com)</a></li>
       </ul>
     </section>
   `);
