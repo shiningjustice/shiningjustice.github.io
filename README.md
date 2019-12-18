@@ -5,7 +5,7 @@
 
 ## Portfolio url: https://shiningjustice.github.io/
 
-- [ ] High Level Basics
+- [x] High Level Basics
   - [x] mobile-first design 
   - [x] semantic, valid markup
   - [x] built from scratch (do not use templates)
