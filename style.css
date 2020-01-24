@@ -1,112 +1,35 @@
-* {
-    box-sizing: border-box;
-}
-  
 body {
-    background-color: rgb(204, 219, 224); 
-    min-width: 267px;
-}
-
-
-h2 {
-    font-family: 'Source Sans Pro', serif;
-    font-weight: 600px;
-    color:rgb(79, 61, 58); 
-}
-
-header {
-    padding: 20px 40px 30px 40px;
-}
-
-header * {
-    margin: 0;
-    font-family: 'IM Fell French Canon', serif;
-    font-style: oblique;
-    color:rgb(79, 61, 58); 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: #f6efe7;
+    color: #242424;
+    margin: 1em;
 }
 
 h1 {
-    font-size: 50px;
-    color:rgb(92, 107, 107);
-    font-style: normal;
+    font-family: 'Corben', serif;
 }
 
 main {
-    padding: 10px 30px 50px 30px; 
-    font-family: 'Source Sans Pro', sans-serif;
-    min-width: 267px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-top: 3em;
 }
 
-* :focus {
-   outline: auto 2px #87ceeb;
-   outline: auto 5px -webkit-focus-ring-color;
-   box-shadow: 0;
+.link {
+    font-style: italic;
+}
+.link:hover {
+    text-decoration: underline;
 }
 
-.social_icon {
-    padding: 0 30px 0 0;
+.nose {
+    font-size: 1.5em;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
-
-ul.social {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0;
-}
-
-.bottom-component {
-    min-height: 50px;
-    max-height: 50px;
-    width: 100%;
-    border-top: 2px solid rgb(204,160,153);
-    background-color:rgb(204, 219, 224); 
-    margin: 0;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-}
-
-.social_icon :hover {
-    color: rgb(204,160,153)
+.nose:hover {
+    font-weight: 600;
 }
 
 a {
-    color:rgb(100, 110, 110);
     text-decoration: none;
-    font-style: oblique;
-    font-family: 'IM Fell French Canon', serif;
-}
-  
-.signature {
-    font-style: oblique;
-}
-
-@media screen and (min-width: 339px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    @media screen and (min-width: 420px) {
-        .bottom-component {
-            max-width: none;
-            position: fixed;
-            bottom: 0;
-        }
-
-        main {
-            padding: 10px 90px 50px 90px; 
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        .social_icon {
-            padding: 0 30px 0 0;
-        }
-    }
 }
